@@ -45,8 +45,9 @@ header a:hover {
 }
 
 .section_artigos {
-    width: 80vw;
+    max-width: 80vw;
     background-color: white;
+    margin: auto;
     margin-top: 20px;
     border-radius: 5px;
     padding: 10px;
@@ -79,6 +80,17 @@ header a:hover {
     width: 240px;
 }
 
+.p-escritor {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    font-style: italic;
+    & a {
+        color: inherit;
+    }
+}
+
 .aside_descricao nav {
     display: flex;
     flex-direction: column;
@@ -89,7 +101,7 @@ header a:hover {
     width: 200px;
     height: 100%;
 }
--*+9*-
+
 summary {
     cursor: pointer;
 }
@@ -134,8 +146,9 @@ details {
 
 /* Notícias Cadastradas */
 
-h2:has(+ .p-noticia-cadastrada) {
-    margin: 30px 0;
+.titulo-noticia {
+    margin: 20px;
+    margin-bottom: 5px;
 }
 
 .p-noticia-cadastrada {
@@ -143,6 +156,14 @@ h2:has(+ .p-noticia-cadastrada) {
     text-indent: 20px;
     text-align: justify;
     font-size: 1.3em;
+    margin-top: 30px;
+}
+
+hr {
+    border-width: 15px;
+    border-style: solid;
+    border-color: var(--amarelo);
+    margin: 30px 0;
 }
 
 .p-id {
@@ -152,7 +173,7 @@ h2:has(+ .p-noticia-cadastrada) {
 /* Infográficos */
 
 article {
-    padding: 10px;
+    padding: 30px;
     background-color: var(--azul);
     border-radius: 15px;
 }
