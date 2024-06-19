@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Variáveis */
+    --amarelo: #ffef82;
+    --azul: #9ed1cf;
+    --dourado: #9d8e25;
+}
+
+body {
+    background-image: url(assets/papel-fundo.png);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    align-items: center
+}
+
+.logo {
+    width: 150px;
+}
+
+header > nav {
+    display: flex;
+    gap: 30px;
+}
+
+header a:hover {
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+.redes-sociais {
+    width: 45px;
+}
+
+.section_artigos {
+    width: 80vw;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section_descricao {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 20px 0px;
+}
+
+.artigo_descricao {
+    font-size: 22px;
+    background-color: var(--azul);
+    width: 50vw;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.artigo_descricao > div {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+.artigo_descricao img {
+    width: 240px;
+}
+
+.aside_descricao nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-size: 22px;
+    text-align: center;
+    width: 200px;
+    height: 100%;
+}
+-*+9*-
+summary {
+    cursor: pointer;
+}
+
+.aside_descricao ul {
+    font-size: 1em;
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    flex-direction: column;
+    list-style: "ᐅ";
+}
+
+.aside_descricao ::marker {
+    font-size: 15px;
+    color: var(--dourado);
+}
+
+.aside_descricao a {
+    text-decoration: none;
+    color: var(--dourado)
+}
+
+.aside_descricao a:hover {
+    color: black;
+    transform: scale(1.3);
+    transition: transform .4s;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+}
+
+/* Sem notícias */
+
+.p-section-vazio {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Notícias Cadastradas */
+
+h2:has(+ .p-noticia-cadastrada) {
+    margin: 30px 0;
+}
+
+.p-noticia-cadastrada {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.p-id {
+    text-align: end;
+}
+
+/* Infográficos */
+
+article {
+    padding: 10px;
+    background-color: var(--azul);
+    border-radius: 15px;
+}
+
+.artigo_infografico h2 {
+    margin: 30px 0;
+}
+
+.artigo_infografico div {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.img-infografico {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Profissões */
+
+.titulo-profissoes{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.9em;
+}
+
+.artigo_profissoes p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    text-align: justify;
+}
